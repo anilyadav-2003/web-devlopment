@@ -1,106 +1,139 @@
+/* Base styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0dada;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+.login-form {
+    border: 1px solid #f1f0f0;
+    background-color: #faf8f9;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
 
+.imgcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.container {
+    padding: 10px 0;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.secondary-actions {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+span.psw {
+    font-size: 14px;
+}
+
+span.psw a {
+    color: #04AA6D;
+    text-decoration: none;
+}
+
+span.psw a:hover {
+    text-decoration: underline;
+}
+
+.remember {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive styles */
 @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
+    .secondary-actions {
+        flex-direction: column;
+        align-items: stretch;
     }
-  }
-  .login-button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-    
-    button:hover {
-      opacity: 0.8;
-    }
-    
+
     .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #a72c2c;
+        width: 100%;
+        margin-bottom: 10px;
     }
-    
-    .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
+
+    .forgot-password {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
     }
-    
-    img.avatar {
-      width: 40%;
-      border-radius: 50%;
-    }
-    
-    .container {
-      padding: 16px;
-    }
-    
-    span.psw {
-      float: right;
-      padding-top: 16px;
-    }
-  
-    body {font-family: Arial, Helvetica, sans-serif;}
-    form {border: 3px solid #cecaca;}
-    
-    input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-    
-    button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-    
-    button:hover {
-      opacity: 0.8;
-    }
-    
-    .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-    }
-    
-    .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-    }
-    
-    img.avatar {
-      width: 40%;
-      border-radius: 50%;
-    }
-    
-  
-    
-    span.psw {
-      float: right;
-      padding-top: 16px;
-    }
-    
-    /* Change styles for span and cancel button on extra small screens */
-    @media screen and (max-width: px) {
-      span.psw {
-         display: block;
-         float: none;
-      }
-      .cancelbtn {
-         width: 100%;
-      }
-    }
+}
+
+/* Style for Forgot Password link */
+.forgot-password {
+    font-size: 14px;
+    color: #04AA6D;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #037c54;
+}
+

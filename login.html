@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="login-style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login-style.css" />
 </head>
 <body>
 
-<h2>Sign in</h2>
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-<h3>Welcome Back !</h3>
-<p>you can signin to access with your existing account.</p>
-  </div>
+    <form action="/action_page.php" method="post" class="login-form">
+        <div class="imgcontainer">
+            <h2>Sign in</h2>
+            <h3>Welcome Back!</h3>
+            <p>You can sign in with your existing account.</p>
+        </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="login-button">Login</button>
+            <label class="remember">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container secondary-actions">
+            <!-- Here is the updated Cancel button -->
+            <button type="button" class="cancelbtn" onclick="window.location.href='index.html';">Cancel</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
         
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+    </form>
 
 </body>
 </html>
